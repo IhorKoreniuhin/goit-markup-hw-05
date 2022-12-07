@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com" />
+    <link 
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" crossorigin />
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link   
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link 
+        rel="stylesheet" 
+        href="./css/styles.css" />
+</head>
 <body>
     <!--Шапка.-->
     <header class="header">
@@ -55,7 +65,7 @@
         <section class="effect">
             <div class="container">
                 <h1 class="effect-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="effect-btn" type="button">Замовити послугу</button>
+                <button class="effect-btn" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <!-- Наші переваги -->
@@ -109,12 +119,15 @@
                 <ul class="work-list list">
                     <li class="work-item">
                         <img src="images/1.jpg" alt="Людина кодить" width="370" height="294" />
+                        <p class="work-text">Декстопні додатки</p>
                     </li>
                     <li class="work-item">
                         <img src="images/2.jpg" alt="Людина працює одночасно на телефоні і ноутбуці" width="370" height="294" />
+                        <p class="work-text">Мобільні додатки</p>
                     </li>
                     <li class="work-item">
                         <img src="images/3.jpg" alt="Людина обирає колір на планшеті" width="370" height="294" />
+                        <p class="work-text">Дизайнерські рішення</p>
                     </li>
                 </ul>
             </div>    
@@ -400,5 +413,16 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-btn" data-modal-close>
+                <svg class=width="11" height="11">
+                    <use href="./images/symbol-defs.svg#icon-vector"></use>
+                </svg>
+            </button>
+        </div>  
+    </div>
+    <script src="./js/modal.js"></script>
+    </body>
 </body>
 </html>
